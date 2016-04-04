@@ -34,9 +34,6 @@ public class App
     ) 
     public void exercise01() { 
  
-    	driver.get("http://www.google.com"); 
+driver.get("http://www.google.com"); 
     } 
-    
-    
-    
 } 

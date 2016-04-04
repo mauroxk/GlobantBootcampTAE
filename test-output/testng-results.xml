@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13526" started-at="2016-04-04T18:43:24Z" finished-at="2016-04-04T18:43:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13526" started-at="2016-04-04T18:43:24Z" finished-at="2016-04-04T18:43:38Z">
+      <class name="com.globant.bootcamp.tae.App">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="beforeMethod" is-config="true" duration-ms="10762" started-at="2016-04-04T15:43:24Z" finished-at="2016-04-04T15:43:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2de64a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="exercise01()[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="exercise01" duration-ms="2386" started-at="2016-04-04T15:43:35Z" description="Exercise" finished-at="2016-04-04T15:43:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exercise01 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="afterMethod" is-config="true" duration-ms="265" started-at="2016-04-04T15:43:37Z" finished-at="2016-04-04T15:43:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2de64a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.globant.bootcamp.tae.App -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
