@@ -39,20 +39,16 @@ public class App
     } 
    
    
-    @Test(description = "Ejercicio03") 
-    public void ejercicio03() { 
+    @Test(description = "Ejercicio04") 
+    public void ejercicio04() { 
  
-    	driver.get("https://www.google.com/"); 
-    	WebElement element = driver.findElement(By.name("q"));
-    	element.sendKeys("bahia blanca");
-    	element.submit();
+    	driver.get("http://tn.com.ar/"); 
+    	//driver.findElement(By.xpath("/html/body/div[2]/article/div/header/h1/a")).click();
+    	driver.findElement(By.xpath("/html/body/div[2]/div[1]/section/article[3]/h2/a")).click();
     	
-        WebElement myDynamicElement = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("resultStats")));
-
-        driver.findElement(By.xpath("//*[@id='rso']//h3/a")).click();
-        
-        Assert.assertTrue(driver.findElements( By.id("s") ).size() != 0, "barra de busqueda no existe");
-
+    
+    	Assert.assertFalse(driver.getPageSource().contains("Dejá tu opinión!"), "Noticia sin comentarios");
+    
 
     } 
 
