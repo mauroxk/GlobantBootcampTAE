@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.globant.bootcamp.tae.App" hash-for-method="exercise01">exercise01</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.globant.bootcamp.tae.App" hash-for-method="ejercicio01">ejercicio01</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -125,11 +125,11 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="exercise01">
-                  </a> <!-- exercise01 -->
-                  <span class="method-name">exercise01</span>
+                  <a name="ejercicio01">
+                  </a> <!-- ejercicio01 -->
+                  <span class="method-name">ejercicio01</span>
                   <em>
-(Exercise)                  </em>
+(Ejercicio01)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +137,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-1758891749/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-740176682/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +146,11 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.globant.bootcamp.tae.App&quot;/&gt;
+      &lt;class name=&quot;com.globant.bootcamp.tae.App&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ejercicio01&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.globant.bootcamp.tae.App --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -188,14 +192,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'exercise01')
+data.setCell(0, 1, 'ejercicio01')
 data.setCell(0, 2, 'com.globant.bootcamp.tae.App')
-data.setCell(0, 3, 2386);
+data.setCell(0, 3, 14739);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -223,16 +227,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.globant.bootcamp.tae.App</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@2de64a)</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@a7079e)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">exercise01</span>
-                <span class="method-start">10762 ms</span>
+                <span class="method-name">ejercicio01</span>
+                <span class="method-start">8990 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod(org.testng.TestRunner@2de64a)</span>
-                <span class="method-start">13167 ms</span>
+                <span class="method-name">afterMethod(org.testng.TestRunner@a7079e)</span>
+                <span class="method-start">23754 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
