@@ -1,9 +1,13 @@
 package com.globant.bootcamp.tae; 
  
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver; 
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext; 
 import org.testng.annotations.AfterMethod; 
 import org.testng.annotations.BeforeMethod; 
@@ -35,13 +39,20 @@ public class App
     } 
    
    
-    @Test(description = "Ejercicio02") 
-    public void ejercicio02() { 
+    @Test(description = "Ejercicio03") 
+    public void ejercicio03() { 
  
-    	driver.get("https://outlook.live.com/owa/?path=/mail/inbox/rp"); 
-    	WebElement element = driver.findElement(By.id("ItemHeader.SenderLabel"));  
-    
-    	Assert.assertTrue(element.getText() == "support.com", "remitente no es support.com");
+    	driver.get("https://www.google.com/"); 
+    	WebElement element = driver.findElement(By.name("q"));
+    	element.sendKeys("bahia blanca");
+    	element.submit();
+    	
+        WebElement myDynamicElement = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("resultStats")));
+
+        driver.findElement(By.xpath("//*[@id='rso']//h3/a")).click();
+        
+        Assert.assertTrue(driver.findElements( By.id("s") ).size() != 0, "barra de busqueda no existe");
+
 
     } 
 
