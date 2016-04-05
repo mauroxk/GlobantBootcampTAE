@@ -35,12 +35,14 @@ public class App
     } 
    
    
-    @Test(description = "Ejercicio01") 
-    public void ejercicio01() { 
+    @Test(description = "Ejercicio02") 
+    public void ejercicio02() { 
  
-    	driver.get("http://labrujula24.com/noticias/2016/23107_Los-detienen-por-darle-un-botellazo-en-la-cabeza-al-encargado-de-un-edificio"); 
-    	Assert.assertTrue(driver.getPageSource().contains("Noticia"), "no se encontro Noticia");
-    	
+    	driver.get("https://outlook.live.com/owa/?path=/mail/inbox/rp"); 
+    	WebElement element = driver.findElement(By.id("ItemHeader.SenderLabel"));  
+    
+    	Assert.assertTrue(element.getText() == "support.com", "remitente no es support.com");
+
     } 
 
 } 
