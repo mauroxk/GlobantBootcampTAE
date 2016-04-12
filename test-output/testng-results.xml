@@ -2,45 +2,45 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13045" started-at="2016-04-05T08:53:36Z" finished-at="2016-04-05T08:53:49Z">
+  <suite name="Default suite" duration-ms="15114" started-at="2016-04-12T08:02:36Z" finished-at="2016-04-12T08:02:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13045" started-at="2016-04-05T08:53:36Z" finished-at="2016-04-05T08:53:49Z">
+    <test name="Default test" duration-ms="15114" started-at="2016-04-12T08:02:36Z" finished-at="2016-04-12T08:02:51Z">
       <class name="com.globant.bootcamp.tae.App">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="beforeMethod" is-config="true" duration-ms="8548" started-at="2016-04-05T05:53:36Z" finished-at="2016-04-05T05:53:45Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="beforeMethod" is-config="true" duration-ms="8405" started-at="2016-04-12T05:02:36Z" finished-at="2016-04-12T05:02:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@180542f]]>
+                <![CDATA[org.testng.TestRunner@194eab6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="ejercicio02()[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="ejercicio02" duration-ms="4125" started-at="2016-04-05T05:53:45Z" description="Ejercicio02" finished-at="2016-04-05T05:53:49Z">
+        <test-method status="FAIL" signature="ejercicio02()[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="ejercicio02" duration-ms="6426" started-at="2016-04-12T05:02:45Z" description="Ejercicio02" finished-at="2016-04-12T05:02:51Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"id","selector":"ItemHeader.SenderLabel"}
-Command duration or timeout: 261 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]"}
+Command duration or timeout: 35 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'ko2-Satellite-C655', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.2.0-34-generic', java.version: '1.8.0_66-internal'
+System info: host: 'ko2-Satellite-C655', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.2.0-35-generic', java.version: '1.8.0_66-internal'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 54de360f-b052-4906-843f-1d8b44ea185f
-*** Element info: {Using=id, value=ItemHeader.SenderLabel}]]>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a1deec6a-22e6-45d7-8506-4d13b68e3094
+*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ItemHeader.SenderLabel"}
-Command duration or timeout: 261 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]"}
+Command duration or timeout: 35 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'ko2-Satellite-C655', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.2.0-34-generic', java.version: '1.8.0_66-internal'
+System info: host: 'ko2-Satellite-C655', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.2.0-35-generic', java.version: '1.8.0_66-internal'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 54de360f-b052-4906-843f-1d8b44ea185f
-*** Element info: {Using=id, value=ItemHeader.SenderLabel}
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a1deec6a-22e6-45d7-8506-4d13b68e3094
+*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -49,10 +49,10 @@ Session ID: 54de360f-b052-4906-843f-1d8b44ea185f
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.globant.bootcamp.tae.App.ejercicio02(App.java:42)
+	at com.globant.bootcamp.tae.App.ejercicio02(App.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,27 +77,27 @@ Session ID: 54de360f-b052-4906-843f-1d8b44ea185f
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"ItemHeader.SenderLabel"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'ko2-Satellite-C655', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.2.0-34-generic', java.version: '1.8.0_66-internal'
+System info: host: 'ko2-Satellite-C655', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'i386', os.version: '4.2.0-35-generic', java.version: '1.8.0_66-internal'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5351878314504154453webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous5351878314504154453webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous5351878314504154453webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous5351878314504154453webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous5351878314504154453webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ejercicio02 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="afterMethod" is-config="true" duration-ms="244" started-at="2016-04-05T05:53:49Z" finished-at="2016-04-05T05:53:49Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="afterMethod" is-config="true" duration-ms="190" started-at="2016-04-12T05:02:51Z" finished-at="2016-04-12T05:02:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@180542f]]>
+                <![CDATA[org.testng.TestRunner@194eab6]]>
               </value>
             </param>
           </params>

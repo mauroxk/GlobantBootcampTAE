@@ -1,5 +1,7 @@
 package com.globant.bootcamp.tae; 
  
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,8 +40,17 @@ public class App
     @Test(description = "Ejercicio02") 
     public void ejercicio02() { 
  
-    	driver.get("https://outlook.live.com/owa/?path=/mail/inbox/rp"); 
-    	WebElement element = driver.findElement(By.id("ItemHeader.SenderLabel"));  
+    	driver.manage().window().maximize();
+    	driver.get("https://hotmail.com"); 
+    	
+    	WebElement element = driver.findElement(By.xpath("/html/body/div/form/div/div/section/div/div[1]/div/div/div/div[4]/div[2]/div/fieldset/div[2]/div/div[2]/div/div[2]/div/div[2]/div"));
+    	element.sendKeys("DIRECCION DE CORREO ACA");
+    	driver.findElement(By.xpath("/html/body/div/form/div/div/section/div/div[1]/div/div/div/div[4]/div[2]/div/fieldset/div[3]/div/div/div[2]/div/div")).sendKeys("CLAVE ACA");
+
+    	driver.findElement(By.id("idSIButton9")).click();
+    	driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]")).click();
+    
+    	element = driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[4]/div[2]/div/div[1]/div[4]/div[2]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/div[1]/div[2]/div/span/div/span/span"));  
     
     	Assert.assertTrue(element.getText() == "support.com", "remitente no es support.com");
 
