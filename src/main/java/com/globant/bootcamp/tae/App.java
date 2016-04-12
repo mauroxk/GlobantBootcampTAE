@@ -42,12 +42,12 @@ public class App
    
     @Test(description = "Ejercicio06") 
     public void ejercicio06() { 
- 
+    	
+    	driver.manage().window().maximize();
     	driver.get("http://tn.com.ar/"); 
-    	//driver.findElement(By.xpath("/html/body/div[2]/article/div/header/h1/a")).click();
-    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-    	driver.findElement(By.xpath("/html/body/div[3]/div[1]/section/article[3]/h2/a")).click();
-    	   
+    	
+    	driver.findElement(By.xpath("/html/body/div[2]/div[1]/section/article[3]/h2/a")).click();
+    	driver.findElement(By.xpath("/html/body/div[2]/div[1]/div[2]/section/section[2]/div[2]/a")).click();
     	Assert.assertFalse(driver.getPageSource().contains("Dejá tu opinión!"), "Noticia sin comentarios");
     
 

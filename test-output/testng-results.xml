@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49532" started-at="2016-04-07T21:33:01Z" finished-at="2016-04-07T21:33:51Z">
+  <suite name="Default suite" duration-ms="38783" started-at="2016-04-12T06:17:46Z" finished-at="2016-04-12T06:18:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49532" started-at="2016-04-07T21:33:01Z" finished-at="2016-04-07T21:33:51Z">
+    <test name="Default test" duration-ms="38783" started-at="2016-04-12T06:17:46Z" finished-at="2016-04-12T06:18:25Z">
       <class name="com.globant.bootcamp.tae.App">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="beforeMethod" is-config="true" duration-ms="12818" started-at="2016-04-07T18:33:01Z" finished-at="2016-04-07T18:33:14Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="beforeMethod" is-config="true" duration-ms="11282" started-at="2016-04-12T03:17:47Z" finished-at="2016-04-12T03:17:58Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ejercicio06()[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="ejercicio06" duration-ms="35650" started-at="2016-04-07T18:33:14Z" description="Ejercicio06" finished-at="2016-04-07T18:33:50Z">
+        <test-method status="PASS" signature="ejercicio06()[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="ejercicio06" duration-ms="26977" started-at="2016-04-12T03:17:58Z" description="Ejercicio06" finished-at="2016-04-12T03:18:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ejercicio06 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="afterMethod" is-config="true" duration-ms="925" started-at="2016-04-07T18:33:50Z" finished-at="2016-04-07T18:33:51Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="afterMethod" is-config="true" duration-ms="407" started-at="2016-04-12T03:18:25Z" finished-at="2016-04-12T03:18:25Z">
           <params>
             <param index="0">
               <value>
