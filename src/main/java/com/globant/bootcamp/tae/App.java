@@ -1,6 +1,7 @@
 package com.globant.bootcamp.tae; 
  
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -42,15 +43,16 @@ public class App
     @Test(description = "Ejercicio03") 
     public void ejercicio03() { 
  
+    	driver.manage().window().maximize();
     	driver.get("https://www.google.com/"); 
+    	
     	WebElement element = driver.findElement(By.name("q"));
     	element.sendKeys("bahia blanca");
     	element.submit();
     	
-        WebElement myDynamicElement = (new WebDriverWait(driver, 10)).until(ExpectedConditions.presenceOfElementLocated(By.id("resultStats")));
-
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id='rso']//h3/a")).click();
-        
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         Assert.assertTrue(driver.findElements( By.id("s") ).size() != 0, "barra de busqueda no existe");
 
 
