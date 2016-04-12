@@ -1,5 +1,7 @@
 package com.globant.bootcamp.tae; 
  
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,8 +40,19 @@ public class App
     @Test(description = "Ejercicio01") 
     public void ejercicio01() { 
  
-    	driver.get("http://labrujula24.com/noticias/2016/23107_Los-detienen-por-darle-un-botellazo-en-la-cabeza-al-encargado-de-un-edificio"); 
-    	Assert.assertTrue(driver.getPageSource().contains("Noticia"), "no se encontro Noticia");
+    	driver.manage().window().maximize();
+    	driver.get("http://labrujula24.com"); 
+    	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    	
+    	driver.findElement(By.className("titulo-nota-destacada-a")).click();
+    	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    	
+    	driver.switchTo().frame("fb_iframe_widget");
+    	String texto = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div/div[1]/div/span[1]/span/span")).getText();
+
+    	System.out.println(texto);
+    	
+    	Assert.assertTrue(texto.indexOf(texto) >= 0, "no se encontro Noticia");
     	
     } 
 
