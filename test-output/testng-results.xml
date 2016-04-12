@@ -2,31 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38783" started-at="2016-04-12T06:17:46Z" finished-at="2016-04-12T06:18:25Z">
+  <suite name="Default suite" duration-ms="69979" started-at="2016-04-12T06:41:29Z" finished-at="2016-04-12T06:42:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38783" started-at="2016-04-12T06:17:46Z" finished-at="2016-04-12T06:18:25Z">
+    <test name="Default test" duration-ms="69979" started-at="2016-04-12T06:41:29Z" finished-at="2016-04-12T06:42:39Z">
       <class name="com.globant.bootcamp.tae.App">
-        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="beforeMethod" is-config="true" duration-ms="11282" started-at="2016-04-12T03:17:47Z" finished-at="2016-04-12T03:17:58Z">
+        <test-method status="PASS" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="beforeMethod" is-config="true" duration-ms="9741" started-at="2016-04-12T03:41:29Z" finished-at="2016-04-12T03:41:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3967ea]]>
+                <![CDATA[org.testng.TestRunner@cee291]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ejercicio06()[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="ejercicio06" duration-ms="26977" started-at="2016-04-12T03:17:58Z" description="Ejercicio06" finished-at="2016-04-12T03:18:25Z">
+        <test-method status="PASS" signature="ejercicio05()[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="ejercicio05" duration-ms="56765" started-at="2016-04-12T03:41:39Z" description="Ejercicio05" finished-at="2016-04-12T03:42:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ejercicio06 -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="afterMethod" is-config="true" duration-ms="407" started-at="2016-04-12T03:18:25Z" finished-at="2016-04-12T03:18:25Z">
+        </test-method> <!-- ejercicio05 -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:com.globant.bootcamp.tae.App@be2bc2]" name="afterMethod" is-config="true" duration-ms="3382" started-at="2016-04-12T03:42:36Z" finished-at="2016-04-12T03:42:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3967ea]]>
+                <![CDATA[org.testng.TestRunner@cee291]]>
               </value>
             </param>
           </params>
