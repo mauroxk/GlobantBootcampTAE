@@ -43,17 +43,22 @@ public class App
     	driver.manage().window().maximize();
     	driver.get("https://hotmail.com"); 
     	
-    	WebElement element = driver.findElement(By.xpath("/html/body/div/form/div/div/section/div/div[1]/div/div/div/div[4]/div[2]/div/fieldset/div[2]/div/div[2]/div/div[2]/div/div[2]/div"));
-    	element.sendKeys("DIRECCION DE CORREO ACA");
-    	driver.findElement(By.xpath("/html/body/div/form/div/div/section/div/div[1]/div/div/div/div[4]/div[2]/div/fieldset/div[3]/div/div/div[2]/div/div")).sendKeys("CLAVE ACA");
-
+    	WebElement element = driver.findElement(By.id("i0116"));
+    	element.click();
+    	element.sendKeys("EMAIL");
+    	driver.findElement(By.id("i0118")).sendKeys("PASSWORD");
+    	
+    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    	
     	driver.findElement(By.id("idSIButton9")).click();
+    	
     	driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]")).click();
-    
-    	element = driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[4]/div[2]/div/div[1]/div[4]/div[2]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/div[1]/div[2]/div/span/div/span/span"));  
-    
-    	Assert.assertTrue(element.getText() == "support.com", "remitente no es support.com");
-
+    	
+    	element = driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[4]/div[2]/div/div[1]/div[4]/div[2]/div[4]/div[2]/div[1]/div[1]/div[1]/div[1]/div/div[2]/div[1]/div[2]/div/span/div/span/span"));
+    	String texto = element.getText();
+    	System.out.println("Remitente: " + texto);
+    	Assert.assertTrue(texto.indexOf("support.com") >= 0, "remitente no es support.com");
+    	
     } 
 
 } 

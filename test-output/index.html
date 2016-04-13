@@ -129,13 +129,13 @@
                   </a> <!-- ejercicio02 -->
                   <span class="method-name">ejercicio02</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]&quot;}
-Command duration or timeout: 35 milliseconds
+Command duration or timeout: 5.05 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;ko2-Satellite-C655&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;4.2.0-35-generic&apos;, java.version: &apos;1.8.0_66-internal&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: a1deec6a-22e6-45d7-8506-4d13b68e3094
+Session ID: fea79923-20ed-41f9-bc65-943cee29dca0
 *** Element info: {Using=xpath, value=/html/body/div[2]/div/div[3]/div[4]/div/div[1]/div[2]/div[5]/div[2]/div[1]/div/div/div[5]/div[2]/div[2]/div[1]/div/div/div[1]/div[1]/div/div[3]/div[3]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -148,7 +148,7 @@ Session ID: a1deec6a-22e6-45d7-8506-4d13b68e3094
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.globant.bootcamp.tae.App.ejercicio02(App.java:51)
+	at com.globant.bootcamp.tae.App.ejercicio02(App.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -178,11 +178,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
 System info: host: &apos;ko2-Satellite-C655&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;i386&apos;, os.version: &apos;4.2.0-35-generic&apos;, java.version: &apos;1.8.0_66-internal&apos;
 Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
-	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous5653468300938133175webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous4840670535616379764webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous4840670535616379764webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -194,7 +191,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-962473299/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--188740843/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -247,12 +244,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ejercicio02')
 data.setCell(0, 2, 'com.globant.bootcamp.tae.App')
-data.setCell(0, 3, 6426);
+data.setCell(0, 3, 11279);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -280,18 +277,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.globant.bootcamp.tae.App</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@194eab6)</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@1a5b54)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ejercicio02</span>
-                <span class="method-start">8405 ms</span>
+                <span class="method-start">8622 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod(org.testng.TestRunner@194eab6)</span>
-                <span class="method-start">14861 ms</span>
+                <span class="method-name">afterMethod(org.testng.TestRunner@1a5b54)</span>
+                <span class="method-start">19946 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
