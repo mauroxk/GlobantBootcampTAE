@@ -42,17 +42,19 @@ public class App
  
     	driver.manage().window().maximize();
     	driver.get("http://labrujula24.com"); 
-    	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+    	
     	
     	driver.findElement(By.className("titulo-nota-destacada-a")).click();
     	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-    	
-    	driver.switchTo().frame("fb_iframe_widget");
-    	String texto = driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div/div[1]/div/span[1]/span/span")).getText();
 
-    	System.out.println(texto);
     	
-    	Assert.assertTrue(texto.indexOf(texto) >= 0, "no se encontro Noticia");
+    	driver.switchTo().frame(driver.findElement(By.className("fb_ltr")));
+    	
+    	String texto = driver.findElement(By.xpath("/html/body/div/div/div/div/div/div[3]/div[1]/div[2]/div/div[2]/div/div[1]/div/span[1]/span/span")).getText();
+    	System.out.println("Texto extraido: " + texto);
+    	texto = texto.toLowerCase();
+    	
+    	Assert.assertTrue(texto.indexOf("noticia") >= 0, "No se encontro Noticia en el comentario");
     	
     } 
 
