@@ -6,4 +6,16 @@
       <class name="com.globant.bootcamp.tae.App"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.globant.bootcamp.tae.App">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="envio" invocation-numbers="0 1"/>
+          <include name="check" invocation-numbers="0 1"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.globant.bootcamp.tae.App -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

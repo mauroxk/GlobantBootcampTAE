@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<class>
+   <destinatario no="1">
+      <email>destino1</email>
+      <asunto>email1</asunto>
+      <cuerpo>contenido1</cuerpo>
+   </destinatario>
+   <destinatario no="2">
+      <email>destino2</email>
+      <asunto>email2</asunto>
+      <cuerpo>contenido2</cuerpo>
+   </destinatario>
+   <destinatario no="3">
+      <email>destino3</email>
+      <asunto>email3</asunto>
+      <cuerpo>contenido3</cuerpo>
+   </destinatario>
+</class>
